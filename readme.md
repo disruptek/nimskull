@@ -1,4 +1,40 @@
-# <img src="https://raw.githubusercontent.com/nim-lang/assets/master/Art/logo-crown.png" height="28px"/> Nimskull
+<div id="top"></div>
+
+<br />
+
+<div align="center">
+  <a href="https://github.com/nim-works/nimskull">
+    <img src="https://raw.githubusercontent.com/nim-lang/assets/master/Art/logo-crown.png" height="80px"/>
+  </a>
+
+  <h3 align="center">NimSkull</h3>
+  <p align="center">
+    The Nim-Works compiler, stdlib, tools, and documentation repository.
+    <br />
+    <br />
+    <a href="https://github.com/nim-works/nimskull/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/nim-works/nimskull/issues">Request Feature</a>
+  </p>
+</div>
+
+<br />
+
+<details>
+  <summary>Table of Contents</summary>
+  <br />
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#direction">Direction</a></li>
+    <li><a href="#near-term-development">Near-Term Development</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#koch">Koch</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">license</a></li>
+  </ol>
+</details>
+
+## About the Project
 
 The Nim-Works compiler, stdlib, tools, and documentation repository. Nim-Works
 is presently a derivative of [Nim][nim-site]. Its intention best described by:
@@ -18,7 +54,13 @@ appearing in the standard library, mostly in the form of deleting much of it.
 
 PS. the name `Nimskull` is temporary
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Direction
+
+<!-- This is quite a large block of text to have so close to the top; I reckon it should be summarised in a much shorter version with a show more following it -->
+
+<details><summary><b>Show</b></summary>
 
 A language (community, compiler, etc) that is *sustained* through the
 *collective* efforts of its practitioners and their *diverse* backgrounds.
@@ -54,7 +96,12 @@ of free labour from a few, we're not interested in that either. Instead as is
 described this language will focus on practitioners able to affect their tools
 and community.
 
+</details>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Near-Term Development
+
 
 ![](./doc/fixup_roadmap.png)
 
@@ -62,6 +109,8 @@ The current and key areas of development are as follows:
 1. spec - clarify the language specification and memorialize it in tests
 2. nkError - replace `localError` etc approach with an AST (`nkError`) one
 3. comments - incrementally document compiler source for easier learning
+
+<details><summary><b>Show more</b></summary><br />
 
 There are more, the above have been carefully chosen based on the direction of
 the language; moreover, their impact is far beyond as described and the
@@ -73,7 +122,12 @@ intention is to create a virtuous cycle, examples:
   flow and effects are no longer intertwined; lead to bug and language
   design fixes due to a broad audit, ease compiler as a library usage for tools
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+</details>
+
 ## Community
+
 
 Presently this repository is our community hub, we'll introduce something more
 interactive as things grow. At this time our community is small and our ability
@@ -83,6 +137,9 @@ associated tools.
 
 If you'd like to participate an easy way would be a pull request, even if it's
 simply documentation, that can act as an introduction.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Compiling
 
@@ -97,6 +154,10 @@ More platforms are supported, however, they are not tested regularly and they
 may not be as stable as the above-listed platforms.
 
 Compiling the compiler is quite straightforward if you follow these steps:
+
+<details>
+  <summary>Show</summary>
+  <br /s>
 
 First, the C source of an older version of the compiler is needed to
 bootstrap the latest version because the compiler itself is written in the
@@ -138,7 +199,14 @@ Next, run the appropriate build shell script for your platform:
 Finally, once you have finished the build steps (on Windows, Mac, or Linux) you
 should add the ``bin`` directory to your PATH.
 
+</details>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Koch
+
+<details>
+<summary>Show</summary>
 
 ``koch`` is the build tool used to build various parts of Nim and to generate
 documentation and the website, among other things. The ``koch`` tool can also
@@ -151,6 +219,10 @@ can run a subset of tests by specifying a category (for example
 
 For more information on the ``koch`` build tool please see the documentation
 within the [doc/koch.rst](doc/koch.rst) file.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+</details>
 
 ## Contributing
 
@@ -183,6 +255,8 @@ changes by only running the corresponding categories of tests. Travis CI verifie
 that all tests pass before allowing the pull request to be accepted, so only
 running specific tests should be harmless.
 Integration tests should go in ``tests/untestable``.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
 MIT
